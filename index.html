@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        class="animat_topbtn"
+        width="50px"
+        src="./assets/img/svg/backtotop.png"
+        alt=""
+      />
+    </button>
+    <div class="overflow-x-hidden">
+      <section class="hero_bg_img">
+        <nav class="py-3 bordr_bottm">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <img
+                  class="cursr_pointr"
+                  src="./assets/img/svg/logo.svg"
+                  alt="logo"
+                />
+
+                <ul
+                  class="d-flex align-items-center ps-0 mb-0 ps-xl-5 ms-xl-2 ms-lg-4 flex-lg-row flex-column mobile_view left_0"
+                  id="navBar"
+                >
+                  <li class="ms_xl_40 ms_lg_30 after_line">
+                    <a
+                      class="ff_inter fs_sm fw-medium clr_normalblack fs_media_19"
+                      href="#"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="ms_xl_40 ms_lg_30 after_line pt-lg-0 pt-3">
+                    <a
+                      class="ff_inter fs_sm fw-medium clr_normalblack fs_media_19"
+                      href="#"
+                      >Use Cases</a
+                    >
+                  </li>
+                  <li class="ms_xl_40 ms_lg_30 after_line pt-lg-0 pt-3">
+                    <a
+                      class="ff_inter fs_sm fw-medium clr_normalblack fs_media_19"
+                      href="#"
+                      >E - Learning</a
+                    >
+                  </li>
+                  <li class="ms_xl_40 ms_lg_30 after_line pt-lg-0 pt-3">
+                    <a
+                      class="ff_inter fs_sm fw-medium clr_normalblack fs_media_19"
+                      href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="ms_xl_40 ms_lg_30 after_line pt-lg-0 pt-3">
+                    <a
+                      class="ff_inter fs_sm fw-medium clr_normalblack fs_media_19"
+                      href="#"
+                      >Company</a
+                    >
+                  </li>
+                  <div
+                    class="d-flex align-items-center d-lg-none d-block flex-lg-row flex-column"
+                  >
+                    <a
+                      class="ff_inter fs_sm clr_gray fw-medium pt-lg-0 pt-3 fs_media_19"
+                      href="#"
+                      >Support</a
+                    >
+
+                    <a
+                      class="ff_inter fs_sm clr_gray fw-medium pt-lg-0 pt-3 fs_media_19"
+                      href="#"
+                      >Sign In</a
+                    >
+                    <button
+                      class="ff_inter fs_sm text-white fw-medium nav_btn_border btn_padding ms_20 nav_btn_hovr mt-lg-0 mt-3 fs_media_19"
+                    >
+                      Book Demo
+                    </button>
+                  </div>
+                  <p
+                    onclick="closenav()"
+                    class="fs_80 mb-0 d-lg-none d-block position-absolute set_cross"
+                  >
+                    &#x2718;
+                  </p>
+                </ul>
+                <!-- -- -->
+
+                <!-- ---- -->
+              </div>
+              <div class="d-lg-block d-none">
+                <div class="d-flex align-items-center">
+                  <a class="ff_inter fs_sm clr_gray fw-medium" href="#"
+                    >Support</a
+                  >
+                  <div class="gray_line ms_20 me_xl_20 mx_lg_20"></div>
+                  <a class="ff_inter fs_sm clr_gray fw-medium" href="#"
+                    >Sign In</a
+                  >
+                  <button
+                    class="ff_inter fs_sm text-white fw-medium nav_btn_border btn_padding ms_20 nav_btn_hovr transition_03"
+                  >
+                    Book Demo
+                  </button>
+                </div>
+              </div>
+              <div class="d-lg-none d-block" id="navi con" onclick=" shownav()">
+                <div class="nav_icon1"></div>
+                <div class="nav_icon2"></div>
+                <div class="nav_icon3"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- --hero-- -->
+        <div class="pt-5 mt-3 position-relative overflow -x-hidden">
+          <img
+            class="position-absolute w_152 round1_set z-1"
+            src="./assets/img/png/roundleft.png"
+            alt="round"
+          />
+          <img
+            class="position-absolute w_176 round1_set"
+            src="./assets/img/png/pin2.png"
+            alt="pin2"
+          />
+          <img
+            class="position-absolute w_152 round2_set"
+            src="./assets/img/png/round_right.png"
+            alt="round"
+          />
+          <div class="container">
+            <div class="row align-items-center">
+              <img
+                class="end-0 w_300 top-0 position-absolute"
+                src="./assets/img/png/pin.png"
+                alt="pin"
+              />
+
+              <div class="col-lg-3 col-sm-9 mx-lg-0 mx-auto">
+                <div>
+                  <img
+                    class="w_xl_130 w_100 phone1_set z-1 position-relative"
+                    src="./assets/img/png/hero_phone1.png"
+                    alt="phone1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="text-center position-relative z-1">
+                  <h1 class="ff_inter fs_2xl fw-semibold clr_blue">
+                    Empower Field Reps
+                  </h1>
+                  <h2 class="ff_inter fs_4xl fw_800 text-black pt-2 mb-0">
+                    Drive Success
+                  </h2>
+                  <p class="ff_inter fs_lg fw-normal text-black pt-3">
+                    Get ahead of the game with mobile field team software and
+                    real-time reporting that boosts performance.
+                  </p>
+                  <div>
+                    <button
+                      class="ff_inter fs_sm text-white fw-medium nav_btn_border btn_padding nav_btn_hovr transition_03"
+                    >
+                      Book Demo
+                    </button>
+                    <button
+                      class="ff_inter fs_sm clr_blue fw-medium hero_btn btn_padding ms-3 hovr_btn transition_03"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-9 mx-lg-0 mx-auto pt-lg-0 pt-4">
+                <div>
+                  <img
+                    class="w_xl_130 w_100 phone2_set position-relative z-1"
+                    src="./assets/img/png/hero_phone2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---map--- -->
+      <section class="round_bgimg pt-lg-5 mt-md-5">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="blue_border p-3 hovr_scal transition_03">
+                <div class="d-flex">
+                  <img src="./assets/img/svg/location.svg" alt="location" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Route Optimization
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Empower your team with seamless and efficient client visit
+                  planning.
+                </p>
+              </div>
+              <div
+                class="yellow_border p-3 mt-lg-5 mt-4 pos_lg_rltv left_lg_40 hovr_scal transition_03"
+              >
+                <div class="d-flex">
+                  <img src="./assets/img/svg/yellowlog.svg" alt="yellow" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Dashboards
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Get an overview on your whole team. View rep activity, planned
+                  client visits & sales made.
+                </p>
+              </div>
+              <div
+                class="orange_border p-3 mt-lg-5 mt-4 pos_lg_rltv left_lg_40 hovr_scal transition_03"
+              >
+                <div class="d-flex">
+                  <img src="./assets/img/svg/notification.svg" alt="location" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Notification Hub
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Empower your team with a dedicated internal notification
+                  platform.
+                </p>
+              </div>
+              <div class="dark_border p-3 mt-lg-5 mt-4 hovr_scal transition_03">
+                <div class="d-flex">
+                  <img src="./assets/img/svg/unlimited.svg" alt="location" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Unlimited Support
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Get unlimited top notch support via one of our multiple
+                  support channels.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mx-lg-0 mx-auto py-lg-0 py-4">
+              <div>
+                <img
+                  class="w-100"
+                  src="./assets/img/png/phonemap.png"
+                  alt="map"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="purple_border p-3 hovr_scal transition_03">
+                <div class="d-flex">
+                  <img src="./assets/img/svg/sales.svg" alt="sales" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Sales Orders
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Supercharge sales and enable reps to place orders in the field
+                  & from the office.
+                </p>
+              </div>
+              <div
+                class="green_border p-3 mt-lg-5 mt-4 pos_lg_rltv lef_lg_40 hovr_scal transition_03"
+              >
+                <div class="d-flex">
+                  <img src="./assets/img/svg/task.svg" alt="task" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Tasks & Surveys
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Create client specific tasks & surveys. Ask the right
+                  questions, and make informed decisions.
+                </p>
+              </div>
+              <div
+                class="aqua_border p-3 mt-lg-5 mt-4 pos_lg_rltv lef_lg_40 hovr_scal transition_03"
+              >
+                <div class="d-flex">
+                  <img src="./assets/img/svg/reporting.svg" alt="reporting" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    Reporting Library
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Effortlessly access, filter, share, & manage company data.
+                </p>
+              </div>
+              <div class="pink_border p-3 mt-lg-5 mt-4 hovr_scal transition_03">
+                <div class="d-flex">
+                  <img src="./assets/img/svg/learning.svg" alt="learning" />
+                  <p
+                    class="mb-0 ff-inter fs_sm fw-semibold clr_normalblack ps-3"
+                  >
+                    E - Learning Platform
+                  </p>
+                </div>
+                <p class="ff_inter fs_xsm fw-normal clr_darkgray mb-0 pt-3">
+                  Equip your team with an in-house learning platform that
+                  delivers all-inclusive training.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---love us -->
+      <section class="py-5 mt-lg-5">
+        <div class="container pt-lg-4">
+          <h1 class="ff_inter fs_3xl fw-bold clr_normalblack text-center mb-0">
+            Why You’ll <span class="clr_blue">Love Us</span>
+          </h1>
+          <div class="row pt-4 mt-lg-2">
+            <div class="col-lg-4">
+              <div class="blue_box p_xl_32 p_20 hovr_scal transition_03">
+                <img src="./assets/img/svg/roundman.svg" alt="roundman" />
+                <p
+                  class="ff_inter fs_lg fw-semibold clr_normalblack mb-0 pt_m20"
+                >
+                  Sharon Cunningham
+                </p>
+                <p class="ff_inter fs_sm fw-medium clr_gray mb-0 pt-2">
+                  Job Title/Company Name
+                </p>
+                <p class="mb-0 ff_inter fs_sm fw-medium clr_darkgray pt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit…Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit…
+                </p>
+                <div class="pt-4">
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 pt-lg-0 pt-4">
+              <div class="green_box p_xl_32 p_20 hovr_scal transition_03">
+                <img src="./assets/img/svg/roundman.svg" alt="roundman" />
+                <p
+                  class="ff_inter fs_lg fw-semibold clr_normalblack mb-0 pt_m20"
+                >
+                  Sharon Cunningham
+                </p>
+                <p class="ff_inter fs_sm fw-medium clr_gray mb-0 pt-2">
+                  Job Title/Company Name
+                </p>
+                <p class="mb-0 ff_inter fs_sm fw-medium clr_darkgray pt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit…Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit…
+                </p>
+                <div class="pt-4">
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 pt-lg-0 pt-4">
+              <div class="red_box p_xl_32 p_20 hovr_scal transition_03">
+                <img src="./assets/img/svg/roundman.svg" alt="roundman" />
+                <p
+                  class="ff_inter fs_lg fw-semibold clr_normalblack mb-0 pt_m20"
+                >
+                  Sharon Cunningham
+                </p>
+                <p class="ff_inter fs_sm fw-medium clr_gray mb-0 pt-2">
+                  Job Title/Company Name
+                </p>
+                <p class="mb-0 ff_inter fs_sm fw-medium clr_darkgray pt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit…Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit…
+                </p>
+                <div class="pt-4">
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                  <img src="./assets/img/svg/start.svg" alt="start" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---empowring -->
+      <section class="py-lg-5 mt-lg-5">
+        <div class="container pt-5">
+          <div class="row flex-lg-row flex-column-reverse align-items-center">
+            <div class="col-lg-6">
+              <div class="pe-xl-5 pt-lg-0 pt-4">
+                <h1 class="ff_inter fs_3xl fw-bold clr_normalblack">
+                  Empowering <span class="clr_blue">Success</span>
+                </h1>
+                <p class="ff_inter fs_md fw-normal clr_darkgray pt-3 mt-1 mb-0">
+                  Unlock the full potential of your field team with our sales
+                  force automation solution, empowering success by streamlining
+                  operations, boosting productivity, and driving remarkable
+                  sales growth
+                </p>
+                <div class="pt-lg-5 pt-4 mt-lg-3">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/svg/search.svg" alt="search" />
+                    <p
+                      class="ff_inter fw-semibold fs_lg clr_normalblack mb-0 ps-3"
+                    >
+                      Real-Time Insights
+                    </p>
+                  </div>
+                  <p class="ff_inter fs_sm fw-semibold clr_darkgray pt-4 mb-0">
+                    Make informed decisions, identify opportunities and address
+                    customer needs promptly.
+                  </p>
+                </div>
+                <div class="pt-lg-5 pt-4 mt-lg-3">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/svg/grow.svg" alt="search" />
+                    <p
+                      class="ff_inter fw-semibold fs_lg clr_normalblack mb-0 ps-3"
+                    >
+                      KPI Setting & Monitoring
+                    </p>
+                  </div>
+                  <p class="ff_inter fs_sm fw-semibold clr_darkgray pt-4 mb-0">
+                    Drive success with goal-oriented metrics and activity
+                    tracking to optimise business performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-10 mx-lg-0 mx-auto">
+              <div class="grid_container">
+                <div class="grid_1 overflow-hidden rdc_25">
+                  <img
+                    class="w-100 hovr_scal2 transition_03"
+                    src="./assets/img/png/man.png"
+                    alt="man"
+                  />
+                </div>
+                <div class="grid_2 overflow-hidden rdc_25">
+                  <img
+                    class="w-100 hovr_scal2 transition_03"
+                    src="./assets/img/png/women.png"
+                    alt="woman"
+                  />
+                </div>
+                <div class="grid_3 overflow-hidden rdc_25">
+                  <img
+                    class="w-100 hovr_scal2 transition_03"
+                    src="./assets/img/png/led.png"
+                    alt="led"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how we can -->
+      <section class="light_bg_clr mt-5 py-5">
+        <div class="container py-lg-4 position-relative">
+          <h1 class="ff_inter fs_3xl fw-bold clr_normalblack text-center">
+            How We Can Help You
+          </h1>
+          <div
+            class="row justify-content-lg-start justify-content-center pt-4 mt-2 overflow-x-hidden"
+          >
+            <div class="blur_round position-absolute"></div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="blue_bg_clr rdc_15 position-relative pt-5 pb-5 ps-4 cursr_pointr"
+              >
+                <h1 class="ff_inter fs_lg fw-bold text-white pt-2">
+                  For Companies
+                </h1>
+                <p class="ff_inter fs_md fw-normal text-white mx_233">
+                  Make informed decisions with accurate internal reports, sales
+                  data and advanced auditing technology.
+                </p>
+                <img
+                  class="position-absolute bottom-0 end-0 max_h_89_xl max_lg_60 max_h_83_md"
+                  src="./assets/img/png/tabman.png"
+                  alt="tabman"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-md-0 pt-4">
+              <div
+                class="yellow_dot_bg rdc_15 position-relative pt-5 pb-5 ps-4 cursr_pointr"
+              >
+                <h1 class="ff_inter fs_lg fw-bold text-white pt-2">
+                  For Field Reps
+                </h1>
+                <p
+                  class="ff_inter fs_md fw-normal text-white mx_233 pe-lg-4 me-3"
+                >
+                  Streamline operations and gain valuable performance insights
+                  with our suite of management features.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-lg-0 pt-4">
+              <div
+                class="blue_card_bg rdc_15 position-relative pt-5 pb-5 ps-4 cursr_pointr"
+              >
+                <h1 class="ff_inter fs_lg fw-bold text-white pt-2">
+                  For Companies
+                </h1>
+                <p class="ff_inter fs_md fw-normal text-white mx_233">
+                  Make informed decisions with accurate internal reports, sales
+                  data and advanced auditing technology.
+                </p>
+                <img
+                  class="position-absolute bottom-0 end-0 max_h_89_xl max_lg_60 max_h_83_md max_h_68"
+                  src="./assets/img/png/smallphonemap.png"
+                  alt="tabman"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----article---- -->
+      <section class="pt-5">
+        <div class="container pt-lg-5">
+          <h1 class="ff_inter fs_3xl fw-bold clr_normalblack text-center">
+            Articles & Resources
+          </h1>
+          <div class="row pt-4 mt-2">
+            <div class="col-lg-5">
+              <div class="position-relative h-100 filtr_blr">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/img/png/blackman.png"
+                  alt="blackman"
+                />
+                <div
+                  class="dark_bg p_xl_32 p_15 position-absolute black_card_set"
+                >
+                  <h1 class="ff_inter fs_xl fw-semibold text-white">
+                    Leveraging a learning management system to enhance sales rep
+                    training
+                  </h1>
+                  <div class="pt-3">
+                    <button
+                      class="card_btn ff_inter fs_sm fw-medium clr_yellow py-1 px-2"
+                    >
+                      Research
+                    </button>
+                    <button
+                      class="card_btn2 ff_inter fs_sm fw-medium clr_orange py-1 px-2 ms-3"
+                    >
+                      LMS
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 pt-lg-0 pt-4x">
+              <div class="row">
+                <div class="col-sm-6 pt-lg-0 pt-4">
+                  <div class="position-relative filtr_blr">
+                    <img
+                      class="w-100"
+                      src="./assets/img/png/cloud.png"
+                      alt="cloud"
+                    />
+                    <div class="dark_bg p-3 position-absolute black_card_set">
+                      <h1 class="ff_inter fs_lg fw-semibold text-white">
+                        Harnessing the Power of Cloud-Based Solutions with
+                        Repforce
+                      </h1>
+                      <div class="pt-2">
+                        <button
+                          class="card_btn ff_inter fs_sm fw-medium clr_yellow py-1 px-2"
+                        >
+                          Research
+                        </button>
+                        <button
+                          class="blue_btn2 ff_inter fs_sm fw-medium clr_blue py-1 px-2 ms-3"
+                        >
+                          Research
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 pt-lg-0 pt-4">
+                  <div class="position-relative filtr_blr">
+                    <img
+                      class="w-100"
+                      src="./assets/img/png/trader.png"
+                      alt="cloud"
+                    />
+                    <div class="dark_bg p-3 position-absolute black_card_set">
+                      <h1 class="ff_inter fs_lg fw-semibold text-white">
+                        Empowering Field Reps with Efficient Route Management
+                      </h1>
+                      <div class="pt-2">
+                        <button
+                          class="card_btn ff_inter fs_sm fw-medium clr_yellow py-1 px-2"
+                        >
+                          Research
+                        </button>
+                        <button
+                          class="blue_btn2 ff_inter fs_sm fw-medium clr_blue py-1 px-2 ms-3"
+                        >
+                          Research
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 pt-4">
+                  <div class="position-relative filtr_blr">
+                    <img
+                      class="w-100"
+                      src="./assets/img/png/write.png"
+                      alt="cloud"
+                    />
+                    <div class="dark_bg p-3 position-absolute black_card_set">
+                      <h1 class="ff_inter fs_lg fw-semibold text-white">
+                        The Advantages of Custom Tasks & Surveys in SFA Systems
+                      </h1>
+                      <div class="pt-2">
+                        <button
+                          class="card_btn ff_inter fs_sm fw-medium clr_yellow py-1 px-2"
+                        >
+                          Research
+                        </button>
+                        <button
+                          class="blue_btn2 ff_inter fs_sm fw-medium clr_blue py-1 px-2 ms-3"
+                        >
+                          Research
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 pt-4">
+                  <div class="position-relative filtr_blr">
+                    <img
+                      class="w-100"
+                      src="./assets/img/png/phonegame.png"
+                      alt="cloud"
+                    />
+                    <div class="dark_bg p-3 position-absolute black_card_set">
+                      <h1 class="ff_inter fs_lg fw-semibold text-white">
+                        Empowering Field Reps with Efficient Route Management
+                      </h1>
+                      <div class="pt-2">
+                        <button
+                          class="card_btn ff_inter fs_sm fw-medium clr_yellow py-1 px-2"
+                        >
+                          Research
+                        </button>
+                        <button
+                          class="blue_btn2 ff_inter fs_sm fw-medium clr_blue py-1 px-2 ms-3"
+                        >
+                          Research
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----footer--------- -->
+      <section class="pt-5 mt-5">
+        <div class="container">
+          <div
+            class="d-flex flex-lg-row flex-column align-items-center justify-content-between bordr_y"
+          >
+            <img src="./assets/img/svg/footlogo.svg" alt="footlogo" />
+            <p
+              class="ff_inter fs_sm fw-medium clr_darkgray mx_w_512 mb-0 text-lg-end text-center pt-lg-0 pt-4"
+            >
+              Supercharge your operations with mobile field team software and
+              real-time reporting that ignites your competitive edge.
+            </p>
+          </div>
+          <div class="row pt-lg-5 pt-4 mt-lg-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-md-0">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  Our Product
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Features</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Use Cases</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >E-Learning Module</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Pricing</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-md-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  About Us
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Our Story</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Articles & Resources</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Careers</a
+                  >
+                  <div class="hir_btn px-2 align-items-center d-inline-block">
+                    <img src="./assets/img/svg/dot.svg" alt="dot" />
+                    <a
+                      href="#"
+                      class="ff_inter fs_sm fw-medium clr_normalblack mb-0"
+                    >
+                      We’re Hiring!
+                    </a>
+                  </div>
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-md-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  Account
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Login</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Support</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Glossary</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >FAQ’s</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 pt-lg-0 pt-4 col-sm-6">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  Contact Us
+                </p>
+                <div class="pt-3 d-flex align-items-center">
+                  <img src="./assets/img/svg/mail.svg" alt="mail" />
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray ps-2 after_line"
+                    href="#"
+                    >info@repforce.co</a
+                  >
+                </div>
+                <div class="pt-3 d-flex align-items-center">
+                  <img src="./assets/img/svg/call.svg" alt="call" />
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray ps-2 after_line"
+                    href="#"
+                    >UK +44 7700 155517</a
+                  >
+                </div>
+                <div class="pt-3 d-flex align-items-center">
+                  <img src="./assets/img/svg/call.svg" alt="call" />
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray ps-2 after_line"
+                    href="#"
+                    >SA +27 60 083 9090</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------second row -->
+          <div class="row pt-5 mt-lg-5 mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  Features
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Sales Orders</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Route Optimisation</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Telesales</a
+                  >
+                  <div class="hir_btn px-2 align-items-center d-inline-block">
+                    <img src="./assets/img/svg/dot.svg" alt="dot" />
+                    <a
+                      href="#"
+                      class="ff_inter fs_sm fw-medium clr_normalblack mb-0"
+                    >
+                      New Feature!
+                    </a>
+                  </div>
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Custom Dashboards</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Tasks & Surveys</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold text-white mb-0">About Us</p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >What Is It</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Who Is It For</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Features</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Pricing</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  Use Cases
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Reporting Library</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Notification Hub</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >E-Learning Platform</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Unlimited Support</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-4">
+              <div>
+                <p class="ff_inter fs_xl fw-bold clr_normalblack mb-0">
+                  E - Learning
+                </p>
+                <li class="pt-3">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Company</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Managers</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Field Reps</a
+                  >
+                </li>
+                <li class="pt-2">
+                  <a
+                    class="ff_inter fs_sm fw-medium clr_darkgray after_line"
+                    href="#"
+                    >Merchandisers</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---links  -->
+          <div class="bordr_top mt-5 py-4">
+            <div
+              class="d-flex flex-lg-row flex-column align-items-center justify-content-between py-2"
+            >
+              <div>
+                <a class="ff_inter fs_sm fw-medium clr_darkgray" href="#"
+                  >©2023 - Repforce | All Rights Reserved | Terms & Conditions |
+                  Privacy Policy</a
+                >
+              </div>
+              <div class="pt-lg-0 pt-4">
+                <img
+                  class="cursr_pointr"
+                  src="./assets/img/svg/linkdin.svg"
+                  alt="linkdin"
+                />
+                <img
+                  class="ms-3 cursr_pointr"
+                  src="./assets/img/svg/exe.svg"
+                  alt="exe"
+                />
+                <img
+                  class="ms-3 cursr_pointr"
+                  src="./assets/img/svg/fb.svg"
+                  alt="fb"
+                />
+                <img
+                  class="ms-3 cursr_pointr"
+                  src="./assets/img/svg/youtube.svg"
+                  alt="youtube"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
